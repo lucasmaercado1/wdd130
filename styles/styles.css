@@ -3,6 +3,28 @@ main {
     margin: 0 auto;
 }
 
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #222;
+    text-align: center;
+}
+
+
 aside {
     width: 300px;
     margin: 20px auto;
