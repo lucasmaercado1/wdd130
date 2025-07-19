@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #264969; /* Dark Green – Representing forests and mountains */
+  --secondary-color: #b8b862; /* Earthy Beige – Reflecting desert and rugged landscapes */
+  --accent1-color: #B4CDE4; /* Light Blue – Inspired by the clear skies and water */
+  --accent2-color: #505033; /* Rustic Brown – Earth tones from Bolivia’s landscapes */
+
+  --heading-font: "Georgia", serif; /* Elegant and adventurous */
+  --body-font: "Roboto", sans-serif; /* Clean and modern for readability */
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 10px 20px;
+  font-size: 0,9rem;
+}
+p {
+  font-family: var(--body-font);
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;         /* Vertically center */
+  left: 50%;        /* Horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+}   
+header,main,footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: black;
+}
+
+nav, p , section , article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 60px;
+  height: auto;
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--accent1-color); 
+}
+article {
+  background-color: var(--accent2-color);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float : right;
+  width: 125px;
+}
+
+
+.image-container {
+  position: relative;
+  width:100%;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;        
+  left: 50%;     
+  width: 1160px;  
+  transform: translate(-50%, -50%);
+  background-color:rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.article-on-image {
+  position: absolute;
+  bottom: 1px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 180px;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 8px;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.article-on-image img {
+  float: right;
+  width: 120px;
+  margin-left: 15px;
+  border-radius: 6px;
+}
