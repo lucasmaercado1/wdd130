@@ -4,15 +4,15 @@
   --accent1-color: #B4CDE4; /* Light Blue – Inspired by the clear skies and water */
   --accent2-color: #505033; /* Rustic Brown – Earth tones from Bolivia’s landscapes */
 
-  --heading-font: "Georgia", serif; /* Elegant and adventurous */
-  --body-font: "Roboto", sans-serif; /* Clean and modern for readability */
+  --heading-font: "Georgia", serif; 
+  --body-font: "Roboto", sans-serif; 
 }
 
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   padding: 10px 20px;
-  font-size: 0,9rem;
+  font-size: 0.9rem;
 }
 p {
   font-family: var(--body-font);
