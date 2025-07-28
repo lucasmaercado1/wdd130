@@ -1,23 +1,11 @@
 :root {
-  --primary-color: #264969; /* Dark Green – Representing forests and mountains */
-  --secondary-color: #b8b862; /* Earthy Beige – Reflecting desert and rugged landscapes */
-  --accent1-color: #B4CDE4; /* Light Blue – Inspired by the clear skies and water */
-  --accent2-color: #505033; /* Rustic Brown – Earth tones from Bolivia’s landscapes */
+  --primary-color: #264969; 
+  --secondary-color: #b8b862; 
+  --accent1-color: #B4CDE4; 
+  --accent2-color: #505033; 
 
-  --heading-font: "Georgia", serif; 
+  --heading-font: "Georgia", serif;
   --body-font: "Roboto", sans-serif; 
-}
-
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 10px 20px;
-  font-size: 0.9rem;
-}
-
-p {
-  font-family: var(--body-font);
-  color: black;
 }
 
 * {
@@ -26,46 +14,61 @@ p {
   box-sizing: border-box;
 }
 
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-text {
-  position: absolute;
-  top: 50%;         /* Vertically center */
-  left: 50%;        /* Horizontally center */
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-
-
 body {
   font-family: var(--body-font);
   background-color: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.6;
-}   
+}  
 
-body, p, li, nav, section, article {
-  font-family: var(--body-font);
-}
-
-
-header,main,footer {
+header, main, footer {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+nav {
+  padding: 8px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navigation li a:hover {
+  background-color: var(--accent1-color);
+  color: black;
 }
 
 h1, h2, h3 {
@@ -73,13 +76,29 @@ h1, h2, h3 {
   color: black;
 }
 
-nav, p , section , article {
-    margin: 16px;
-    padding: 8px;
+h1 {
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--secondary-color);
+  padding: 16px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+p {
+  color: black;
+  margin: 16px 0;
+}
+
+section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+article {
+  background-color: var(--accent2-color);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  color: white;
 }
 
 .hero {
@@ -87,38 +106,22 @@ nav, p , section , article {
 }
 
 .hero img {
-  width: 60px;
-  height: auto;
-}
-
-h1 {
-  position: relative;
-  top: 20px;
   width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: var(--accent1-color); 
-}
-article {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+  height: auto;
+  display: block;
 }
 
 .hero article img {
-  float : right;
+  float: right;
   width: 125px;
+  margin-left: 15px;
+  border-radius: 6px;
 }
-
 
 .image-container {
   position: relative;
-  width:100%;
-  max-width: 800px;
-  display: inline-block;
+  width: 100%;
+  display: block;
 }
 
 .image-container img {
@@ -129,11 +132,12 @@ article {
 
 .image-text {
   position: absolute;
-  top: 50%;        
-  left: 50%;     
-  width: 1160px;  
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1160px;
   transform: translate(-50%, -50%);
-  background-color:rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 30px;
   font-size: 2rem;
@@ -159,9 +163,67 @@ article {
   font-size: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .article-on-image img {
   float: right;
   width: 120px;
   margin-left: 15px;
   border-radius: 6px;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.adventures figure {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+}
+
+.adventures figcaption {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer p {
+  margin: 8px;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialmedia a img {
+  width: 32px;
+  height: auto;
+  display: inline-block;
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
