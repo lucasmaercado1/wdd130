@@ -1,99 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="title" content="Contact Us | White Water Rafting">
-    <meta name="author" content="Lucas Mercado">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or suggestions. Reach us by phone, email, or visit our office.">
-    <title>Contact Us | White Water Rafting</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Georgia&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or suggestions. Reach us by phone, email, or visit our office." />
+  <meta name="author" content="Lucas Mercado" />
+  <title>About Us | White Water Rafting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Roboto&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Bolivia Tourism Logo" width="90" height="90">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Bolivia Tourism Logo" width="90" height="90" />
+    </div>
+    <nav>
+      <ul class="main-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="contact-info">
-            <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Reach out to us using the information below or fill out our contact form.</p>
-            
-            <div class="company-details">
-                <p><strong>Address:</strong> 123 River Adventure Rd, Rapids City, USA</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Email:</strong> info@tourism.bo</p>
-            </div>
+  <main>
+    <section class="hero-section">
+      <img src="images/rafting2.jpg" alt="Rafting on the river" />
+      <article class="hero-text">
+        <h1>About White Water Rafting</h1>
+        <p>Experience thrilling adventures with us!</p>
+      </article>
+    </section>
 
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!..." 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+    <section class="about-sections grid-layout">
+      <article class="about-story">
+        <h2>Our Story</h2>
+        <p>Founded in 1998, we have been leading river expeditions for over 20 years.</p>
+      </article>
+      <article class="about-mission">
+        <h2>Our Mission</h2>
+        <p>To provide safe, exciting, and memorable rafting experiences to all adventurers.</p>
+      </article>
+      <article class="about-values">
+        <h2>Our Values</h2>
+        <p>Safety, environmental respect, and customer satisfaction are at the core of everything we do.</p>
+      </article>
+      <article class="about-history">
+        <h2>Milestones</h2>
+        <p>Over 10,000 happy adventurers and multiple industry awards for excellence.</p>
+      </article>
+    </section>
 
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee-grid">
-                <figure>
-                    <img src="images/employee2.webp" alt="John Smith, River Guide">
-                    <figcaption>John Smith - Senior River Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpeg" alt="Sarah Lee, Customer Service">
-                    <figcaption>Sarah Lee - Customer Service Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee4.jpeg" alt="Mike Brown, Safety Coordinator">
-                    <figcaption>Mike Brown - Safety Coordinator</figcaption>
-                </figure>
-            </div>
-        </section>
+   <section class="team flex-container">
+  <figure>
+    <img src="images/employee2.webp" alt="John Smith, River Guide" />
+    <figcaption>John Smith - Lead Guide</figcaption>
+  </figure>
+  <figure>
+    <img src="images/employee3.jpeg" alt="Sarah Lee, Safety Expert" />
+    <figcaption>Sarah Lee - Safety Expert</figcaption>
+  </figure>
+  <figure>
+    <img src="images/employee4.jpeg" alt="Mike Brown, Customer Service" />
+    <figcaption>Mike Brown - Customer Service</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="images/employee.webp" alt="Anna Martinez, Logistics Coordinator" />
+    <figcaption>Anna Martinez - Logistics Coordinator</figcaption>
+  </figure>
+  <figure>
+    <img src="images/employee5.jpeg" alt="Carlos Diaz, Marketing Manager" />
+    <figcaption>Carlos Diaz - Marketing Manager</figcaption>
+  </figure>
+</section>
 
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+  </main>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <p>Purpose of your message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
-        <p><a href="wireframe-contact.png" target="_blank">View Contact Page Wireframe</a></p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+  </footer>
 </body>
 </html>
